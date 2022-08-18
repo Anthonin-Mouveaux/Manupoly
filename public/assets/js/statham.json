@@ -1,0 +1,229 @@
+{
+    "results": [
+        {
+            "id": 80001,
+            "original_name": "Rue Raymond Gourdain",
+            "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
+            "overview": "public/assets/img/raymondgourdain.jpeg",
+            "house_price": 50,
+            "hotel_price": 250
+        },
+        {
+            "id": 80002,
+            "original_name": "Grande Rue du Petit Saint-Jean",
+            "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
+            "overview": "public/assets/img/petitStJean.png",
+            "house_price": 50,
+            "hotel_price":  250
+        },
+        {
+            "id": 80003,
+            "original_name": "Boulevard de Roubaix",
+            "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
+            "overview": "public/assets/img/bvdRoubaix.jpeg",
+            "house_price": 50,
+            "hotel_price": 300
+        },
+        {
+            "id": 80004,
+            "original_name": "Rue des Teinturiers",
+            "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
+            "overview": "public/assets/img/teinturiers.jpeg",
+            "house_price": 50,
+            "hotel_price": 300
+        },
+        {
+            "id": 80005,
+            "original_name": "Rue de Bouvines",
+            "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
+            "overview": "public/assets/img/bouvines.jpeg",
+            "house_price": 50,
+            "hotel_price": 300
+        },
+        {
+            "id": 80006,
+            "original_name": "Rue Saint-Honoré",
+            "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
+            "overview": "public/assets/img/saint-honoré.jpeg",
+            "house_price": 100,
+            "hotel_price": 500
+        },
+        {
+            "id": 80007,
+            "original_name": "Chaussée Jules Ferry",
+            "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
+            "overview": "public/assets/img/julesferry.jpeg",
+            "house_price": 100,
+            "hotel_price": 500
+        },
+        {
+            "id": 80008,
+            "original_name": "Rue de Cagny",
+            "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
+            "overview": "public/assets/img/cagny.jpeg",
+            "house_price": 100,
+            "hotel_price": 500
+        },
+        {
+            "id": 80009,
+            "original_name": "Rue de l'Abbaye",
+            "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
+            "overview": "public/assets/img/abbaye.jpeg",
+            "house_price": 100,
+            "hotel_price": 600
+        },
+        {
+            "id": 80010,
+            "original_name": "Rue Léon Dupontreué",
+            "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
+            "overview": "public/assets/img/leonDupontreue.jpeg",
+            "house_price": 100,
+            "hotel_price": 600
+        },
+        {
+            "id": 80011,
+            "original_name": "Rue Saint-Fuscien",
+            "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
+            "overview": "public/assets/img/saintFuscien.jpeg",
+            "house_price": 100,
+            "hotel_price": 600
+        },
+        {
+            "id": 80012,
+            "original_name": "Boulevard de Saint-Quentin",
+            "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
+            "overview": "public/assets/img/bvdSaintQuentin.png",
+            "house_price": 150,
+            "hotel_price": 750
+        },
+        {
+            "id": 80013,
+            "original_name": "Rue Robert de Luzarche",
+            "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
+            "overview": "public/assets/img/robertLuzarche .jpeg",
+            "house_price": 150,
+            "hotel_price": 750
+        },
+        {
+            "id": 80014,
+            "original_name": "Rue Gaulthier de Rumilly",
+            "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
+            "overview": "public/assets/img/gaulthierRumilly.jpg",
+            "house_price": 150,
+            "hotel_price": 750
+        },
+        {
+            "id": 80015,
+            "original_name": "Rue des Jacobins",
+            "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
+            "overview": "public/assets/img/jacobins.jpeg",
+            "house_price": 150,
+            "hotel_price": 900
+        },
+        {
+            "id": 80016,
+            "original_name": "Place Gambetta",
+            "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
+            "overview": "public/assets/img/gambetta.jpeg",
+            "house_price": 150,
+            "hotel_price": 900
+        },
+        {
+            "id": 80017,
+            "original_name": "Rue Lemerchier",
+            "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
+            "overview": "public/assets/img/lemerchier.jpeg",
+            "house_price": 150,
+            "hotel_price": 900
+        },
+        {
+            "id": 80018,
+            "original_name": "Rue Cormont",
+            "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
+            "overview": "public/assets/img/cormont.png",
+            "house_price": 200,
+            "hotel_price": 1000
+        },
+        {
+            "id": 80019,
+            "original_name": "Mail Albert 1er",
+            "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
+            "overview": "public/assets/img/albert1er.jpeg",
+            "house_price": 200,
+            "hotel_price": 1000
+        },
+        {
+            "id": 80020,
+            "original_name": "Place Saint-Michel",
+            "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
+            "overview": "public/assets/img/saintMichel.jpeg",
+            "house_price": 200,
+            "hotel_price": 1000
+        },
+        {
+            "id": 80021,
+            "original_name": "Rue de la République",
+            "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
+            "overview": "public/assets/img/republique.png",
+            "house_price": 200,
+            "hotel_price": 1200
+        },
+        {
+            "id": 80022,
+            "original_name": "Place Notre Dame",
+            "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
+            "overview": "public/assets/img/notreDame.jpeg",
+            "house_price": 200,
+            "hotel_price": 1200
+        },
+        {
+            "id": 80023,
+            "original_name": "Gare de Boves",
+            "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
+            "overview": "public/assets/img/gareBoves.jpeg",
+            "price": 100
+        },
+        {
+            "id": 80024,
+            "original_name": "Gare Saint-Roch",
+            "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
+            "overview": "public/assets/img/gareSaintRoch.jpeg",
+            "price": 100
+        },
+        {
+            "id": 80025,
+            "original_name": "Gare de Longeau",
+            "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
+            "overview": "public/assets/img/gareLongeau.jpeg",
+            "price": 100
+        },
+        {
+            "id": 80026,
+            "original_name": "Gare d'Amiens",
+            "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
+            "overview": "public/assets/img/gareAmiens.jpeg",
+            "price": 100
+        },
+        {
+            "id": 80027,
+            "original_name": "Parc de la Hotoie",
+            "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
+            "overview": "public/assets/img/parcHotoie.jpeg",
+            "price": 500
+        },
+        {
+            "id": 80028,
+            "original_name": "Jardin des Plantes",
+            "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
+            "overview": "public/assets/img/jardinPlantes.jpeg",
+            "price": 500
+        },
+        {
+            "id": 80029,
+            "original_name": "Parc Saint-Pierre",
+            "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
+            "overview": "public/assets/img/parcSaintPierre.jpg",
+            "price": 500
+        }
+    ]
+}
