@@ -1,3 +1,10 @@
+// CHARGER LE JSON
+
+fetch('./public/assets/js/statham.json').then(waitThen => waitThen.json()).then(data => data.results.forEach(movie => {
+    
+}))        
+
+
 // GESTION DU CAROUSEL
 
 
