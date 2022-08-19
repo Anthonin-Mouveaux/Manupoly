@@ -251,8 +251,12 @@ body {
     .card {
         margin: 2%;
         background: white;
-        width: 22%;
+        width: 20%;
         height: 55%;
+    }
+
+    .houseBuy p {
+        margin-right: 0;
     }
 
     .button-82-front {

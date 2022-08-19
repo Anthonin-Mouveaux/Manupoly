@@ -13,9 +13,9 @@ fetch("public/assets/js/statham.json")
             let housePrice = element.house_price;
             let hotelPrice = element.hotel_price;
             let buttons = 0;
+            
             document.querySelector('.container').innerHTML +=
-            `
-                <div class="card">
+                `<div class="card">
                     <div class="cont">
                         <div class="title ${color}">
                             <h2>${title}</h2>
