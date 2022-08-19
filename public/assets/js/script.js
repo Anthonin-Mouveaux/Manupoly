@@ -23,9 +23,10 @@ fetch("public/assets/js/statham.json")
                         <div class="imgs">
                             <img src="${overview}" alt="photo de ${title}">
                         </div>
+                        <h3>Prix d'achat</h3>
                         <div class="content">
                             <div class="houseBuy">
-                                <p>Acheter une maison : ${housePrice}€</p>
+                                <p>Maison : ${housePrice}€</p>
                                 <button class="button-82-pushable" role="button" data-street="${title}" data-price="${housePrice}">
                                     <span class="button-82-shadow"></span>
                                     <span class="button-82-edge"></span>
@@ -33,7 +34,7 @@ fetch("public/assets/js/statham.json")
                                 </button>
                             </div>
                             <div class="hotelBuy">
-                                <p>Acheter un hôtel : ${hotelPrice}€</p>
+                                <p>Hôtel : ${hotelPrice}€</p>
                                 <button class="button-82-pushable" role="button" data-street="${title}" data-price="${hotelPrice}">
                                     <span class="button-82-shadow"></span>
                                     <span class="button-82-edge"></span>
