@@ -5,15 +5,35 @@
 
 /* Header */
 header{
-  height: 150px;
+  /* height: 150px; */
   background-color: #CDE6D0 ;
+  padding-top: 2%;
+  height: 28vh;
+}
+.title{
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  left: 10%;
+}
+/* Liste de navigation */
+.navlist{
+  padding: 2%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
 }
 nav{
   width: 100%;
 }
 /* logo */
 .logo{
-  width: 300px;
+  width: 60%;
+  left: 25%;
 }
 /* Produits */
 .produits{
@@ -40,17 +60,7 @@ nav{
   background-color:#E2010F ;
 }
 
-/* Liste de navigation */
-.navlist{
-  margin: 0%;
-  padding: 2%;
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-}
+
 /* Carrousel */
 /* Div générale du carrousel */
 .carouselExampleControls{
@@ -84,4 +94,44 @@ nav{
   footer{
     width: 100%;
     background-color: #1EA64A;
+  }
+  .foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  @media screen and (max-width:1000px){
+    /* Header */
+    header{
+      height: 200px;
+      background-color: #CDE6D0 ;
+    }
+    .title{
+      z-index: 1;
+      position: relative;
+      display: flex;
+      margin-bottom: 6%;
+      justify-content: center;
+      left: 0%;
+    }
+    .foot{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    /* logo */
+    /* Liste de navigation */
+  .navlist{
+    margin: auto;
+    padding: auto;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+  }
   }
