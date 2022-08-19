@@ -31,7 +31,7 @@ const slider = document.querySelector(".items");
 			}
 
 			if (prev == -1) {
-				prev = 3;
+				prev = 2;
 			}
 
 			slides[current].classList.add("active");
