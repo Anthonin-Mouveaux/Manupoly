@@ -50,6 +50,7 @@ nav{
 }
 /* Panier */
 .cart{
+  background-color: #CDE6D0;
   width: 50px;
   height: 50px;
   border:outset;
@@ -96,6 +97,7 @@ nav{
     background-color: #1EA64A;
   }
   .foot{
+    padding: 2%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
