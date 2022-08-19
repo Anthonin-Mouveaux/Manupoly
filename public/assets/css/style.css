@@ -228,6 +228,11 @@ body {
 }
     
 @media (min-width: 768px) {
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+
     .cardContainer {
         width: 100%;
         height: 100%;
@@ -235,6 +240,7 @@ body {
     .imgs {
         height: 50%;
         width: 95%;
+        justify-content: center;
     }
     .imgs img {
         width: 90%;
@@ -245,8 +251,8 @@ body {
     .card {
         margin: 2%;
         background: white;
-        width: 20%;
-        height: 20%;
+        width: 22%;
+        height: 55%;
     }
 
     .button-82-front {
