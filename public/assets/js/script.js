@@ -72,7 +72,5 @@ fetch("public/assets/js/statham.json")
                 </div>`
             }
                 buttons = document.querySelectorAll('button');
-                console.log(buttons[1].dataset.price);
-
             })
         })
