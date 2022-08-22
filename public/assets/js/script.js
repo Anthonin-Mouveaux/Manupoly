@@ -31,10 +31,10 @@ fetch("public/assets/js/statham.json")
                         <div class="content">
                             <div class="houseBuy">
                                 <p>${bPrice}€</p>
-                                <button class="button-82-pushable" role="button" data-street="${title}" data-price="${housePrice}">
+                                <button class="button-82-pushable" role="button">
                                     <span class="button-82-shadow"></span>
                                     <span class="button-82-edge"></span>
-                                    <span class="button-82-front text">+</span>
+                                    <span class="button-82-front text" data-street="${title}" data-price="${housePrice}">+</span>
                                 </button>
                             </div>
                         </div>
@@ -55,18 +55,18 @@ fetch("public/assets/js/statham.json")
                         <div class="content">
                             <div class="houseBuy">
                                 <p>Maison : ${housePrice}€</p>
-                                <button class="button-82-pushable" role="button" data-street="${title}" data-price="${housePrice}">
+                                <button class="button-82-pushable" role="button">
                                     <span class="button-82-shadow"></span>
                                     <span class="button-82-edge"></span>
-                                    <span class="button-82-front text">+</span>
+                                    <span class="button-82-front text" data-street="${title}" data-price="${housePrice}">+</span>
                                 </button>
                             </div>
                             <div class="hotelBuy">
                                 <p>Hôtel : ${hotelPrice}€</p>
-                                <button class="button-82-pushable" role="button" data-street="${title}" data-price="${hotelPrice}">
+                                <button class="button-82-pushable" role="button">
                                     <span class="button-82-shadow"></span>
                                     <span class="button-82-edge"></span>
-                                    <span class="button-82-front text">+</span>
+                                    <span class="button-82-front text" data-street="${title}" data-price="${hotelPrice}">+</span>
                                 </button>
                             </div>
                         </div>
@@ -103,6 +103,7 @@ window.addEventListener("click", (e) => {
 })
 
 // VIDER LE PANIER
+
 
 
 
