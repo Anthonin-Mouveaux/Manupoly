@@ -73,4 +73,35 @@ fetch("public/assets/js/statham.json")
             }
                 buttons = document.querySelectorAll('button');
             })
+            if (cat == rue)
+            document.querySelector('.container').innerHTML +=
+                `<div class="card">
+                    <div class="cont">
+                        <div class="title ${color}">
+                            <h2>${title}</h2>
+                        </div>
+                        <div class="imgs">
+                            <img src="${overview}" alt="photo de ${title}">
+                        </div>
+                        <h3>Prix d'achat</h3>
+                        <div class="content">
+                            <div class="houseBuy">
+                                <p>Maison : ${housePrice}€</p>
+                                <button class="button-82-pushable" role="button" data-street="${title}" data-price="${housePrice}">
+                                    <span class="button-82-shadow"></span>
+                                    <span class="button-82-edge"></span>
+                                    <span class="button-82-front text">+</span>
+                                </button>
+                            </div>
+                            <div class="hotelBuy">
+                                <p>Hôtel : ${hotelPrice}€</p>
+                                <button class="button-82-pushable" role="button" data-street="${title}" data-price="${hotelPrice}">
+                                    <span class="button-82-shadow"></span>
+                                    <span class="button-82-edge"></span>
+                                    <span class="button-82-front text">+</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>`
         })
