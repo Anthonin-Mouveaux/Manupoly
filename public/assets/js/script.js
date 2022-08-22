@@ -8,7 +8,7 @@ fetch("public/assets/js/statham.json")
         json.results.forEach(element => {
             let title = element.original_name;
             let ref = element.id;
-            let cat = element.cat;
+            var cat = element.cat;
             let color = element.color;
             let description = element.description;
             let overview = element.overview;
@@ -76,6 +76,12 @@ fetch("public/assets/js/statham.json")
             buttons = document.querySelectorAll('button');
         })
     })
+
+document.getElementById('btnRue').addEventListener("click", ()=> {
+    if (cat == "rue"){
+        do
+    }
+}
 
 
 // GESTION DU CAROUSEL
