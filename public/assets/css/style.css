@@ -10,7 +10,7 @@ header{
   padding-top: 2%;
   height: 28vh;
 }
-.title{
+#title{
   z-index: 1;
   position: absolute;
   display: flex;
@@ -53,8 +53,9 @@ nav{
   background-color: #CDE6D0;
   width: 50px;
   height: 50px;
-  border:outset;
-
+  border:solid;
+  border-radius: 100%;
+  box-shadow: 3px 8px ;
 }
 /* Panier au clique */
 .cart:hover{
@@ -109,7 +110,7 @@ nav{
       height: 200px;
       background-color: #CDE6D0 ;
     }
-    .title{
+    #title{
       z-index: 1;
       position: relative;
       display: flex;
