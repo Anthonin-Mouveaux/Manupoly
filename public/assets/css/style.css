@@ -51,12 +51,10 @@ nav{
 /* Panier */
 .cart{
   padding: 6%;
-  background-color: #CDE6D0;
+  background-color:#CDE6D0;
+  border: 0px;
   width: 50px;
   height: 50px;
-  border:solid;
-  border-radius: 100%;
-  box-shadow: 3px 8px ;
 }
 /* Panier au clique */
 .cart:hover{
@@ -74,24 +72,28 @@ nav{
     background-image: url(../img/amiens2-min.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50vh;
+    height: 100vh;
     width: 100%;
+    margin-top: -300px;
 }
 /* Deuxième slide */
 #slide2{
   background-image: url(../img/park-saint-pierre-amiens-picardie_17282_ml-min.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height:50vh;
+  height:100vh;
   width: 100%;
+  margin-top: -300px;
+ 
 }
 /* Troisième slide */
 #slide3{
   background-image: url(../img/gare-sncf-damiens-realisation-curieuse-L-1-min.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
+  height: 100vh;
   width: 100%;
+  margin-top: -300px;
 }
   /* Footer */
   footer{
