@@ -1,18 +1,384 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-#cardContainer {
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Header */
+
+header {
+    height: 15vh;
+    background-color: #CDE6D0;
+}
+
+nav {
+    width: 100%;
+}
+
+/* logo */
+.logo {
+    width: 300px;
+}
+
+/* Produits */
+.produits {
+    border: white outset;
+    padding: 10%;
+    width: 70px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.produits:hover {
+    background-color: #E2010F;
+}
+
+/* Panier */
+.cart {
+    width: 50px;
+    height: 50px;
+    background-color: #CDE6D0;
+    border: none;
+}
+
+.cart:hover {
+    background-color: #E2010F;
+}
+
+#cartSlide {
+    width: 25%;
+    height: 100vh;
+    position: fixed;
+    left: 100%;
+    top: 0;
+    background-color: #CDE6D0;
+    border: solid 1px #000000;
+    text-align: center;
+    z-index: 5;
+}
+
+.cartSlideIn {
+    animation: cartSlideIn 0.2s linear forwards;
+}
+
+.cartSlideOut {
+    animation: cartSlideOut 0.2s linear forwards;
+}
+
+@keyframes cartSlideIn {
+    0% {left: 100%;}
+    100% {left: 75%;}
+}
+
+@keyframes cartSlideOut {
+    0% {left: 75%;}
+    100% {left: 100%;}
+}
+
+.cartItem {
     display: flex;
+}
+
+/* Liste de navigation */
+.navlist {
+    height: 60px;
+    margin: 0%;
+    padding: 2%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    margin: 10% 0;
+    align-items: center;
+    align-content: center;
+}
+
+/* Liste des produits */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cardContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
+    margin: 2%;
+    background: white;
+    width: 80vw;
+    height: 130vw;
     display: flex;
     flex-direction: column;
-    width: 30vw;
-    height: 45vw;
-    border: solid 1px black;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
+
+.card .cont {
+    width: 90%;
+    height: 93%;
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .cont .title {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    border: 2px solid black;
+}
+
+.brown {
+    background-color: #944827;
+}
+
+.lightblue {
+    background-color: #BAE4FA;
+}
+
+.pink {
+    background-color: #D62F87;
+}
+
+.orange {
+    background-color: #F68F02;
+}
+
+.red {
+    background-color: #E2010F;
+}
+
+.yellow {
+    background-color: #FFED02;
+}
+
+.green {
+    background-color: #1EA64A;
+}
+
+.blue {
+    background-color: #0268B3;
+}
+
+.cream {
+    background-color: #F1E0BB;
+}
+
+.lightgreen {
+    background-color: #D8F1AF;
+}
+
+
+
+.card .cont #rent {
+    margin-top: 10px;
+}
+
+.card .cont .details {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+}
+
+.card .cont .details .rents {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-weight: bold;
+    margin: 1px;
+}
+
+.imgs {
+    display: flex;
+    width: 240px;
+    height: 50%;
+    align-items: center;
+}
+
+.imgs img {
+    width: 240px;
+    height: 80%;
+}
+
+.content {
+    display: flex;
+    height: 35%;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.houseBuy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.houseBuy p {
+    margin-bottom: 20%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.hotelBuy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.hotelBuy p {
+    text-align: center;
+    margin-bottom: 20%;
+}
+
+.button-82-pushable {
+    position: relative;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    transition: filter 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    height: 30px;
+    width: 35px;
+}
+
+.button-82-pushable :last-child {
+    padding: 13%;
+}
+
+.button-82-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: hsl(0deg 0% 0% / 0.25);
+    will-change: transform;
+    transform: translateY(2px);
+    transition:
+        transform 600ms cubic-bezier(.3, .7, .4, 1);
+}
+
+.button-82-edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: linear-gradient(to left,
+            hsl(340deg 100% 16%) 0%,
+            hsl(340deg 100% 32%) 8%,
+            hsl(340deg 100% 32%) 92%,
+            hsl(340deg 100% 16%) 100%);
+}
+
+.button-82-front {
+    display: block;
+    position: relative;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    color: white;
+    background: hsl(345deg 100% 47%);
+    will-change: transform;
+    transform: translateY(-4px);
+    transition:
+        transform 600ms cubic-bezier(.3, .7, .4, 1);
+    height: 30px;
+    width: 35px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .cardContainer {
+        width: 100%;
+        height: 100%;
+    }
+
+    .imgs {
+        height: 50%;
+        width: 95%;
+        justify-content: center;
+    }
+
+    .imgs img {
+        width: 90%;
+        height: 150px;
+        object-fit: fill;
+
+    }
+
+    .card {
+        margin: 2%;
+        background: white;
+        width: 22%;
+        height: 55%;
+    }
+
+    .button-82-front {
+        font-size: 1.25rem;
+        padding: 12px 42px;
+    }
+}
+
+.button-82-pushable:hover {
+    filter: brightness(110%);
+    -webkit-filter: brightness(110%);
+}
+
+.button-82-pushable:hover .button-82-front {
+    transform: translateY(-6px);
+    transition:
+        transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-front {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+}
+
+.button-82-pushable:hover .button-82-shadow {
+    transform: translateY(4px);
+    transition:
+        transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-shadow {
+    transform: translateY(1px);
+    transition: transform 34ms;
+}
+
+.button-82-pushable:focus:not(:focus-visible) {
+    outline: none;
+}
+
