@@ -1,8 +1,10 @@
+// CHARGER LE JSON
+
 fetch("public/assets/js/statham.json")
-    .then(function(response) {
+    .then(function (response) {
         return response.json()
     })
-    .then (function(json){
+    .then(function (json) {
         json.results.forEach(element => {
             let title = element.original_name;
             let ref = element.id;
@@ -15,9 +17,9 @@ fetch("public/assets/js/statham.json")
             let bPrice = element.b_price;
             let buttons = 0;
 
-            if (cat == "gare" || cat == "parc"){
+            if (cat == "gare" || cat == "parc") {
                 document.querySelector('.container').innerHTML +=
-                `<div class="card">
+                    `<div class="card">
                     <div class="cont">
                         <div class="title ${color}">
                             <h2>${title}</h2>
@@ -29,10 +31,10 @@ fetch("public/assets/js/statham.json")
                         <div class="content">
                             <div class="houseBuy">
                                 <p>${bPrice}€</p>
-                                <button class="button-82-pushable" role="button" data-street="${title}" data-price="${housePrice}">
+                                <button class="button-82-pushable" role="button">
                                     <span class="button-82-shadow"></span>
                                     <span class="button-82-edge"></span>
-                                    <span class="button-82-front text">+</span>
+                                    <span class="button-82-front text" data-street="${title}" data-price="${bPrice}">+</span>
                                 </button>
                             </div>
                         </div>
@@ -41,7 +43,7 @@ fetch("public/assets/js/statham.json")
             }
             else {
                 document.querySelector('.container').innerHTML +=
-                `<div class="card">
+                    `<div class="card">
                     <div class="cont">
                         <div class="title ${color}">
                             <h2>${title}</h2>
@@ -53,55 +55,66 @@ fetch("public/assets/js/statham.json")
                         <div class="content">
                             <div class="houseBuy">
                                 <p>Maison : ${housePrice}€</p>
-                                <button class="button-82-pushable" role="button" data-street="${title}" data-price="${housePrice}">
+                                <button class="button-82-pushable" role="button">
                                     <span class="button-82-shadow"></span>
                                     <span class="button-82-edge"></span>
-                                    <span class="button-82-front text">+</span>
+                                    <span class="button-82-front text" data-street="${title}" data-price="${housePrice}">+</span>
                                 </button>
                             </div>
                             <div class="hotelBuy">
                                 <p>Hôtel : ${hotelPrice}€</p>
-                                <button class="button-82-pushable" role="button" data-street="${title}" data-price="${hotelPrice}">
+                                <button class="button-82-pushable" role="button">
                                     <span class="button-82-shadow"></span>
                                     <span class="button-82-edge"></span>
-                                    <span class="button-82-front text">+</span>
+                                    <span class="button-82-front text" data-street="${title}" data-price="${hotelPrice}">+</span>
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>`
             }
-                buttons = document.querySelectorAll('button');
-            })
-            if (cat == rue)
-            document.querySelector('.container').innerHTML +=
-                `<div class="card">
-                    <div class="cont">
-                        <div class="title ${color}">
-                            <h2>${title}</h2>
-                        </div>
-                        <div class="imgs">
-                            <img src="${overview}" alt="photo de ${title}">
-                        </div>
-                        <h3>Prix d'achat</h3>
-                        <div class="content">
-                            <div class="houseBuy">
-                                <p>Maison : ${housePrice}€</p>
-                                <button class="button-82-pushable" role="button" data-street="${title}" data-price="${housePrice}">
-                                    <span class="button-82-shadow"></span>
-                                    <span class="button-82-edge"></span>
-                                    <span class="button-82-front text">+</span>
-                                </button>
-                            </div>
-                            <div class="hotelBuy">
-                                <p>Hôtel : ${hotelPrice}€</p>
-                                <button class="button-82-pushable" role="button" data-street="${title}" data-price="${hotelPrice}">
-                                    <span class="button-82-shadow"></span>
-                                    <span class="button-82-edge"></span>
-                                    <span class="button-82-front text">+</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>`
+            buttons = document.querySelectorAll('button');
         })
+    })
+
+
+// GESTION DU CAROUSEL
+
+
+
+// CREATION DES CARDS DEPUIS JSON
+
+
+
+// GESTION DE L'AJOUT DANS LE PANIER
+
+window.addEventListener("click", (e) => {
+    if (e.target.classList.contains('text')) {
+        cartContent.innerHTML +=
+            `
+            <div class="cartItem">
+                <p> ${e.target.dataset.street} </p>
+                <p> ${e.target.dataset.price} </p>
+            </div>
+        `;
+        console.log(typeof parseInt(priceTotal.textContent), parseInt(priceTotal.textContent), typeof parseInt(e.target.dataset.price), parseInt(e.target.dataset.price));
+        priceTotal.textContent = parseInt(priceTotal.textContent) + parseInt(e.target.dataset.price);
+    }
+})
+
+// VIDER LE PANIER
+
+
+
+// GESTION DE L'ONGLET DU PANIER
+
+cartButton.addEventListener("click", () => {
+    cartSlide.classList.remove('cartSlideOut');
+    cartSlide.classList.add('cartSlideIn');
+    console.log('check');
+})
+
+cartClose.addEventListener('click', () => {
+    cartSlide.classList.remove('cartSlideIn');
+    cartSlide.classList.add('cartSlideOut');
+})

@@ -4,10 +4,149 @@
     box-sizing: border-box;
 }
 
-/* body {
+/* Header */
+header {
+    /* height: 150px; */
+    background-color: #CDE6D0;
+    padding-top: 2%;
+    height: 28vh;
+}
+
+#title {
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 10%;
+}
+
+/* Liste de navigation */
+.navlist {
+    padding: 2%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+nav {
     width: 100%;
-    height: 100%;
-} */
+}
+
+/* logo */
+.logo {
+    width: 60%;
+    left: 25%;
+}
+
+/* Produits */
+.produits {
+    border: white outset;
+    padding: 10%;
+    width: 70px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/* Produits au clique */
+.produits:hover {
+    color: black;
+    background-color: #E2010F;
+}
+
+/* Panier */
+.cart {
+    width: 50px;
+    height: 50px;
+    background-color: #CDE6D0;
+    border: none;
+}
+
+.cart:hover {
+    background-color: #E2010F;
+    cursor: pointer;
+}
+
+#cartSlide {
+    width: 25%;
+    height: 100vh;
+    position: fixed;
+    left: 100%;
+    top: 0;
+    background-color: #CDE6D0;
+    border: solid 1px #000000;
+    text-align: center;
+    z-index: 5;
+}
+
+.cartSlideIn {
+    animation: cartSlideIn 0.2s linear forwards;
+}
+
+.cartSlideOut {
+    animation: cartSlideOut 0.2s linear forwards;
+}
+
+@keyframes cartSlideIn {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: 75%;
+    }
+}
+
+@keyframes cartSlideOut {
+    0% {
+        left: 75%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+.cartItem {
+    display: flex;
+}
+
+/* Carrousel */
+/* Div générale du carrousel */
+.carouselExampleControls {
+    background-color: gray;
+}
+
+/* Première slide */
+#slide1 {
+    background-image: url(../img/amiens2-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+}
+
+/* Deuxième slide */
+#slide2 {
+    background-image: url(../img/park-saint-pierre-amiens-picardie_17282_ml-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+}
+
+/* Troisième slide */
+#slide3 {
+    background-image: url(../img/gare-sncf-damiens-realisation-curieuse-L-1-min.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+}
+
+/* Liste des produits */
 
 .container {
     display: flex;
@@ -57,7 +196,7 @@
     margin-bottom: 5%;
 }
 
-.brown{
+.brown {
     background-color: #944827;
 }
 
@@ -144,6 +283,7 @@
     align-items: center;
     width: 50%;
 }
+
 .houseBuy p {
     margin-bottom: 20%;
     margin-right: 10%;
@@ -156,6 +296,7 @@
     align-items: center;
     width: 50%;
 }
+
 .hotelBuy p {
     text-align: center;
     margin-bottom: 20%;
@@ -175,10 +316,11 @@
     height: 30px;
     width: 35px;
 }
+
 .button-82-pushable :last-child {
     padding: 13%;
 }
-    
+
 .button-82-shadow {
     position: absolute;
     top: 0;
@@ -190,11 +332,9 @@
     will-change: transform;
     transform: translateY(2px);
     transition:
-        transform
-        600ms
-        cubic-bezier(.3, .7, .4, 1);
+        transform 600ms cubic-bezier(.3, .7, .4, 1);
 }
-    
+
 .button-82-edge {
     position: absolute;
     top: 0;
@@ -202,15 +342,13 @@
     width: 100%;
     height: 100%;
     border-radius: 12px;
-    background: linear-gradient(
-        to left,
-        hsl(340deg 100% 16%) 0%,
-        hsl(340deg 100% 32%) 8%,
-        hsl(340deg 100% 32%) 92%,
-        hsl(340deg 100% 16%) 100%
-    );
+    background: linear-gradient(to left,
+            hsl(340deg 100% 16%) 0%,
+            hsl(340deg 100% 32%) 8%,
+            hsl(340deg 100% 32%) 92%,
+            hsl(340deg 100% 16%) 100%);
 }
-    
+
 .button-82-front {
     display: block;
     position: relative;
@@ -221,13 +359,25 @@
     will-change: transform;
     transform: translateY(-4px);
     transition:
-        transform
-        600ms
-        cubic-bezier(.3, .7, .4, 1);
+        transform 600ms cubic-bezier(.3, .7, .4, 1);
     height: 30px;
     width: 35px;
 }
-    
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #1EA64A;
+}
+
+.foot {
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
 @media (min-width: 768px) {
     .container {
         width: 100%;
@@ -238,17 +388,20 @@
         width: 100%;
         height: 100%;
     }
+
     .imgs {
         height: 50%;
         width: 95%;
         justify-content: center;
     }
+
     .imgs img {
         width: 90%;
         height: 150px;
         object-fit: fill;
-        
+
     }
+
     .card {
         margin: 2%;
         background: white;
@@ -263,44 +416,36 @@
     .button-82-front {
         font-size: 1.25rem;
         padding: 12px 42px;
-        }
     }
-    
-    .button-82-pushable:hover {
+}
+
+.button-82-pushable:hover {
     filter: brightness(110%);
     -webkit-filter: brightness(110%);
-    }
-    
-    .button-82-pushable:hover .button-82-front {
+}
+
+.button-82-pushable:hover .button-82-front {
     transform: translateY(-6px);
     transition:
-        transform
-        250ms
-        cubic-bezier(.3, .7, .4, 1.5);
-    }
-    
-    .button-82-pushable:active .button-82-front {
+        transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-front {
     transform: translateY(-2px);
     transition: transform 34ms;
-    }
-    
-    .button-82-pushable:hover .button-82-shadow {
+}
+
+.button-82-pushable:hover .button-82-shadow {
     transform: translateY(4px);
     transition:
-        transform
-        250ms
-        cubic-bezier(.3, .7, .4, 1.5);
-    }
-    
-    .button-82-pushable:active .button-82-shadow {
+        transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-shadow {
     transform: translateY(1px);
     transition: transform 34ms;
-    }
-    
-    .button-82-pushable:focus:not(:focus-visible) {
+}
+
+.button-82-pushable:focus:not(:focus-visible) {
     outline: none;
-    }
-
-
-
-
+}
