@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Monopoly;
+    src: url(../font/MonopolixMedium.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +10,7 @@
 }
 
 body {
-    background-color: #CDE6D0;
+    font-family: Monopoly;
 }
 
 /* Header */
@@ -177,7 +182,6 @@ nav {
 }
 
 .cart:hover {
-    background-color: #E2010F;
     cursor: pointer;
 }
 
@@ -235,7 +239,7 @@ nav {
 #slide1 {
     background-image: url(../img/amiens2-min.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 150%;
     height: 50vh;
     width: 100%;
 }
@@ -490,6 +494,11 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
+
+.foot a {
+    text-decoration: none;
+    color: #000000;
 }
 
 @media (min-width: 768px) {
