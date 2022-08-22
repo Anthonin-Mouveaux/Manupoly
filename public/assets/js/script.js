@@ -34,7 +34,7 @@ fetch("public/assets/js/statham.json")
                                 <button class="button-82-pushable" role="button">
                                     <span class="button-82-shadow"></span>
                                     <span class="button-82-edge"></span>
-                                    <span class="button-82-front text" data-street="${title}" data-price="${housePrice}">+</span>
+                                    <span class="button-82-front text" data-street="${title}" data-price="${bPrice}">+</span>
                                 </button>
                             </div>
                         </div>
@@ -103,7 +103,6 @@ window.addEventListener("click", (e) => {
 })
 
 // VIDER LE PANIER
-
 
 
 

@@ -227,7 +227,7 @@
             "original_name": "Gare de Boves",
             "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
             "overview": "public/assets/img/gareBoves.jpeg",
-            "house-price": 100
+            "b_price": 500
         },
         {
             "id": 80024,
@@ -236,7 +236,7 @@
             "original_name": "Gare Saint-Roch",
             "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
             "overview": "public/assets/img/gareSaintRoch.jpeg",
-            "house-price": 100
+            "b_price": 500
         },
         {
             "id": 80025,
@@ -245,7 +245,7 @@
             "original_name": "Gare de Longeau",
             "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
             "overview": "public/assets/img/gareLongeau.jpeg",
-            "house-price": 100
+            "b_price": 500
         },
         {
             "id": 80026,
@@ -254,7 +254,7 @@
             "original_name": "Gare d'Amiens",
             "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
             "overview": "public/assets/img/gareAmiens.jpeg",
-            "house-price": 100
+            "b_price": 500
         },
         {
             "id": 80027,
@@ -263,7 +263,7 @@
             "original_name": "Parc de la Hotoie",
             "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
             "overview": "public/assets/img/parcHotoie.jpeg",
-            "house-price": 500
+            "b_price": 2500
         },
         {
             "id": 80028,
@@ -272,7 +272,7 @@
             "original_name": "Jardin des Plantes",
             "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
             "overview": "public/assets/img/jardinPlantes.jpeg",
-            "house-price": 500
+            "b_price": 2500
         },
         {
             "id": 80029,
@@ -281,7 +281,7 @@
             "original_name": "Parc Saint-Pierre",
             "description": "La Rue des 3 Cailloux est l'artère principale de la zone piétonne du centre ville d'Amiens.",
             "overview": "public/assets/img/parcSaintPierre.jpg",
-            "house-price": 500
+            "b_price": 2500
         }
     ]
 }
